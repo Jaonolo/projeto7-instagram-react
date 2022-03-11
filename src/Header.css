@@ -1,0 +1,68 @@
+
+header, .stories-holder, .feed-container, nav {
+    background-color: #ffffff;
+}
+
+header, header input, .stories-holder, .feed-container, nav {
+    border-color: #dbdbdb;
+    border-width: 1px;
+}
+
+header, nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;  
+}
+
+header {
+    top: 0;
+    border-bottom-style: solid
+}
+
+nav {
+    bottom: 0;
+    border-top-style: solid;
+}
+
+.header-content, .page-holder {
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+.header-content {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px
+}
+
+/* offset logo? */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-separator {
+    width: 1px;
+    height: 22px;
+    margin: 0 10px;
+    background-color: #dbdbdb
+}
+
+header input {
+    width: 215px;
+    height: 28px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+header input::placeholder {
+    text-align: center
+}
+
+.header-menu {
+    display: flex;
+    gap: 24px
+}
