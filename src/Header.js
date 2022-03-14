@@ -3,16 +3,13 @@ import logoImg from './assets/logo.png'
 
 const logo = <img src={logoImg} alt="instagram-logo"/>
 
-const Header = props => (props.isMobile) ?
+const Header = props =>
     <header>
         <div className="header-content mobile-only">
             <ion-icon name="logo-instagram"></ion-icon>
             {logo}
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
-    </header>
-    :
-    <header>
         <div className="header-content desktop-only">
             <div className="header-logo">
                 <ion-icon name="logo-instagram"></ion-icon>

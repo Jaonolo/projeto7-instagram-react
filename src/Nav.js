@@ -1,3 +1,5 @@
+import './Nav.css'
+
 const Nav = () => 
     <nav>
         <div class="header-content mobile-only">

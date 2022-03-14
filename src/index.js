@@ -18,6 +18,9 @@ const feed = [
     {
         owner: {profileImage: image1, username: 'oi'},
         content: {isVideo: false, img: image1},
+        comments: [{username: 'oi', value: 'salve salve salve'}, {username: 'oi', value: 'salve salve salve'}],
+        liked: [{profileImage: image1, username: 'oi'}, {profileImage: image1, username: 'oi'}],
+        description: 'salve'
     }
 ]
 
