@@ -1,25 +1,16 @@
 import './Aside.css'
-import AsideAccount from './aside/AsideAccount'
-import AsideSuggestions from './aside/AsideSuggestions'
-
-const me = {
-    name: 'Jão',
-    username: 'jaonolo'
-}
-
-const suggestions = [{
-    username: 'jaonolo',
-}]
+import AsideAccount from './AsideAccount'
+import AsideSuggestions from './AsideSuggestions'
 
 const Aside = props => 
     <aside>
-        <AsideAccount account={me}/>
+        <AsideAccount account={props.me}/>
         <div>
             <p>Sugestões pra você</p>
             <a href="#"><strong>Ver Tudo</strong></a>
         </div>
         {
-            suggestions.map(suggestion => <AsideSuggestions account={suggestion}/>)
+            props.suggestions.map(suggestion => <AsideSuggestions account={suggestion}/>)
         }
         <p><small>
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •

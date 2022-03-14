@@ -1,6 +1,6 @@
 const AsideAccount = props => 
     <div className="aside-account">
-        <img className="profile" src={props.profilePicture} alt=""/>
+        <img className="profile" src={props.account.profileImage} alt=""/>
         <p>
             <strong>
                 {props.account.username}

@@ -1,7 +1,7 @@
 const AsideSuggestions = props => 
     <div>
         <div className="aside-suggestions">
-            <img className="profile" src={props.account.profilePicture} alt=""/>
+            <img className="profile" src={props.account.profileImage} alt=""/>
             <p>
                 <strong>
                     {props.account.username}

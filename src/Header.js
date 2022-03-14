@@ -1,10 +1,13 @@
 import './Header.css'
+import logoImg from './assets/logo.png'
+
+const logo = <img src={logoImg} alt="instagram-logo"/>
 
 const Header = props => (props.isMobile) ?
     <header>
         <div className="header-content mobile-only">
             <ion-icon name="logo-instagram"></ion-icon>
-            <img src="public/logo.png" alt="instagram-logo"/>
+            {logo}
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
     </header>
@@ -14,7 +17,7 @@ const Header = props => (props.isMobile) ?
             <div className="header-logo">
                 <ion-icon name="logo-instagram"></ion-icon>
                 <div className="vertical-separator"></div>
-                <img src="public/logo.png" alt="instagram-logo"/>
+                {logo}
             </div>
             <input type="text" placeholder="Pesquisar"/>
             <div className="header-menu">

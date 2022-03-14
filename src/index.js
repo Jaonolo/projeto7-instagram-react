@@ -4,11 +4,12 @@ import StoriesHolder from "./StoriesHolder";
 import Feed from './feed/Feed.js'
 import image1 from './assets/gato-telefone 1.png'
 import './App.css'
-import Aside from "./Aside";
+import Aside from "./aside/Aside.js";
+import Nav from "./Nav";
 
 const stories = [...Array(15)].map(a => 
     {return {
-        src: image1,
+        profileImage: image1,
         username: 'oie'
     }}
 )
@@ -20,6 +21,17 @@ const feed = [
     }
 ]
 
+const me = {
+    profileImage: image1,
+    username: 'jaonolo',
+    name: 'Jão'
+}
+
+const suggestions = [{
+    profileImage: image1,
+    username: 'jaonolo'
+}]
+
 const App = () => 
     <div>
         <Header isMobile={false} />
@@ -28,8 +40,9 @@ const App = () =>
                 <StoriesHolder stories={stories} />
                 <Feed feed={feed} />
             </section>
-            <Aside/>
+            <Aside me={me} suggestions={suggestions}/>
         </div>
+        <Nav />
     </div>
 
 reactDom.render(
