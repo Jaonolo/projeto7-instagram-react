@@ -4,6 +4,7 @@ import StoriesHolder from "./StoriesHolder";
 import Feed from './feed/Feed.js'
 import image1 from './assets/gato-telefone 1.png'
 import './App.css'
+import Aside from "./Aside";
 
 const stories = [...Array(15)].map(a => 
     {return {
@@ -23,10 +24,11 @@ const App = () =>
     <div>
         <Header isMobile={false} />
         <div className="page-holder">
-            <div className="page-content">
+            <section className="page-content">
                 <StoriesHolder stories={stories} />
                 <Feed feed={feed} />
-            </div>
+            </section>
+            <Aside/>
         </div>
     </div>
 
