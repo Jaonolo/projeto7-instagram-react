@@ -66,3 +66,7 @@ header input::placeholder {
     display: flex;
     gap: 24px
 }
+
+ion-icon {
+    --ionicon-stroke-width: 40px;
+}
